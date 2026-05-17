@@ -22,54 +22,41 @@ This project aims to:
 
 ## Repository Structure
 
-**app/**
+```text
 
-|---|---app.py  _# Streamlit application_
-
-|---|---README.md
-
-**data/**
-
-|---|---ACSDT5Y2024.B01003-Data.csv   _# Population data_
-
-|---|---ACSDT5Y2024.B15003-Data.csv   _# Education data_
-
-|---|---ACSDT5Y2024.B17001-Data.csv  _# Poverty data_
-
-|---|---ACSDT5Y2024.B19013-Data.csv   _# Median income_
-
-|---|---ACSDT5Y2024.B23025-Data.csv   _# Employment data_
-
-|---|---ACSDT5Y2024.B25003-Data.csv   _# Housing data_
-
-|---|---county_master.csv           _# Cleaned merged dataset_
-
-|---|---county_risk_app_ready.csv    _# Final dataset used in app_
-
-|---|---README.md
-
-**docs/**
-
-|---|---project_report.md            _# Final report_
-
-|---|---resume.md
-
-|---|---headshot.jpg
-
-|---|---README.md
-
-**notebooks/**
-
-|---|---01_cleaning_preprocessing.ipynb
-
-|---|---02_eda_economic_risk.ipynb
-
-|---|---03_economic_risk_modeling_and_validation.ipynb
-
-|---|---04_visualization_streamlit.ipynb
-
-|---|---README.md
-
+UMBC-DATA606-Capstone/
+│
+├── app/
+│   ├── app.py
+│   └── README.md
+│
+├── data/
+│   ├── ACSDT5Y2024.B01003-Data.csv
+│   ├── ACSDT5Y2024.B15003-Data.csv
+│   ├── ACSDT5Y2024.B17001-Data.csv
+│   ├── ACSDT5Y2024.B19013-Data.csv
+│   ├── ACSDT5Y2024.B23025-Data.csv
+│   ├── ACSDT5Y2024.B25003-Data.csv
+│   ├── county_master.csv
+│   ├── county_risk_app_ready.csv
+│   └── README.md
+│
+├── docs/
+│   ├── project_report.md
+│   ├── resume.md
+│   ├── headshot.jpg
+│   └── README.md
+│
+├── notebooks/
+│   ├── 01_cleaning_preprocessing.ipynb
+│   ├── 02_eda_economic_risk.ipynb
+│   ├── 03_economic_risk_modeling_and_validation.ipynb
+│   ├── 04_visualization_streamlit.ipynb
+│   └── README.md
+│
+├── requirements.txt
+└── README.md
+```
 **requirements.txt**
 
 **README.md**
