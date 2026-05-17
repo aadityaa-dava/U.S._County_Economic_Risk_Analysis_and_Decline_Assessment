@@ -1,67 +1,148 @@
 # Notebooks
 
-This folder contains the Jupyter notebooks used throughout the capstone project:
+This folder contains the Jupyter notebooks used throughout the DATA 606 Capstone project:
 
-**Identifying U.S. Counties at Risk of Economic Decline Using Public Socioeconomic Indicators**
+## Identifying U.S. Counties at Risk of Economic Decline Using Public Socioeconomic Indicators
+
+The notebooks document the complete analytical workflow, from raw data preprocessing to economic risk modeling and interactive visualization development.
 
 ---
 
-## 📊 Overview
+# Overview
 
-The notebooks follow a structured, end-to-end data science pipeline:
+The notebooks follow a structured end-to-end data science pipeline:
 
 1. Data Cleaning and Preprocessing  
 2. Exploratory Data Analysis (EDA)  
 3. Economic Risk Modeling and Validation  
-4. Visualization and Application Integration  
+4. Visualization and Streamlit Application Integration  
 
-Each notebook builds on the previous step, forming a complete workflow from raw data to final insights.
-
----
-
-## 📁 Notebook Descriptions
-
-### `01_cleaning_preprocessing.ipynb`
-- Loads raw ACS datasets  
-- Cleans and standardizes data  
-- Merges multiple tables using `county_fips`  
-- Performs feature engineering (rates, percentages)  
-- Outputs the processed dataset (`county_master.csv`)  
-
-### `02_eda_economic_risk.ipynb`
-- Performs exploratory data analysis  
-- Generates summary statistics  
-- Creates visualizations using Plotly  
-- Analyzes distributions and relationships between variables  
-- Identifies patterns across counties  
-
-### `03_economic_risk_modeling_and_validation.ipynb`
-- Constructs the economic risk score  
-- Combines multiple indicators into a composite metric  
-- Categorizes counties into Low, Medium, and High risk  
-- Validates the scoring approach through analysis and comparison  
-
-### `04_visualisation_streamlit.ipynb`
-- Prepares final dataset for application use  
-- Generates visualizations used in the Streamlit dashboard  
-- Exports the final dataset (`county_risk_app_ready.csv`)  
+Each notebook builds upon the previous stage to create a reproducible and interpretable workflow for county-level economic risk analysis.
 
 ---
 
-## ⚙️ Workflow Summary
+# Folder Structure
 
-Raw ACS Data → Cleaning & Merging → EDA → Risk Scoring → Final Dataset → Streamlit App
+```text
+notebooks/
+│
+├── 01_cleaning_preprocessing.ipynb
+├── 02_eda_economic_risk.ipynb
+├── 03_economic_risk_modeling_and_validation.ipynb
+├── 04_visualization_streamlit.ipynb
+└── README.md
+```
 
 ---
 
-## 🎯 Purpose
+# Notebook Descriptions
 
-These notebooks demonstrate:
+## `01_cleaning_preprocessing.ipynb`
 
-- A complete data science workflow  
-- Data preprocessing and feature engineering  
-- Exploratory and statistical analysis  
-- Interpretable modeling approach  
-- Integration with an interactive application
+This notebook focuses on data preparation and integration.
 
----  
+### Key Tasks
+- Loads raw ACS datasets
+- Cleans and standardizes variables
+- Handles missing and inconsistent values
+- Merges datasets using `county_fips`
+- Performs feature engineering and transformations
+- Creates the unified county-level dataset
+
+### Output
+```text
+county_master.csv
+```
+
+---
+
+## `02_eda_economic_risk.ipynb`
+
+This notebook performs exploratory analysis of socioeconomic indicators across U.S. counties.
+
+### Key Tasks
+- Generates descriptive statistics
+- Explores variable distributions
+- Analyzes regional disparities
+- Creates interactive visualizations
+- Identifies relationships between indicators
+
+### Tools Used
+- Plotly
+- Pandas
+- NumPy
+
+---
+
+## `03_economic_risk_modeling_and_validation.ipynb`
+
+This notebook develops the economic risk framework used in the project.
+
+### Key Tasks
+- Constructs the economic risk score
+- Combines multiple socioeconomic indicators
+- Categorizes counties into:
+  - Low Risk
+  - Medium Risk
+  - High Risk
+- Evaluates and validates scoring methodology
+- Identifies key drivers of economic decline
+
+---
+
+## `04_visualization_streamlit.ipynb`
+
+This notebook prepares the final outputs for the Streamlit application.
+
+### Key Tasks
+- Generates application-ready visualizations
+- Prepares dashboard-compatible datasets
+- Exports final processed data
+- Supports interactive analytics integration
+
+### Output
+```text
+county_risk_app_ready.csv
+```
+
+---
+
+# Workflow Summary
+
+```text
+Raw ACS Data
+      ↓
+Data Cleaning & Preprocessing
+      ↓
+Exploratory Data Analysis
+      ↓
+Economic Risk Modeling
+      ↓
+Final Processed Dataset
+      ↓
+Streamlit Dashboard Application
+```
+
+---
+
+# Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Plotly
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
+# Purpose
+
+These notebooks demonstrate a complete and reproducible data science workflow for analyzing county-level socioeconomic conditions and identifying economic risk patterns.
+
+The notebooks support:
+- Academic research and analysis
+- Data preprocessing and feature engineering
+- Exploratory and statistical analysis
+- Interpretable modeling approaches
+- Interactive dashboard integration
