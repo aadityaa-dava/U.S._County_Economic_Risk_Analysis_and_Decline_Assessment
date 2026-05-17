@@ -1,59 +1,103 @@
 # Data
 
-This folder contains all datasets used in the capstone project:
+This folder contains all datasets used in the DATA 606 Capstone project:
 
-**Identifying U.S. Counties at Risk of Economic Decline Using Public Socioeconomic Indicators**
+## Identifying U.S. Counties at Risk of Economic Decline Using Public Socioeconomic Indicators
 
----
-
-## 📊 Data Sources
-
-The primary data source is the **American Community Survey (ACS) 5-Year Estimates (2024)** from the U.S. Census Bureau.
-
-The following datasets are included:
-
-- `ACSDT5Y2024.B01003-Data.csv` – Total Population  
-- `ACSDT5Y2024.B15003-Data.csv` – Educational Attainment  
-- `ACSDT5Y2024.B17001-Data.csv` – Poverty Status  
-- `ACSDT5Y2024.B19013-Data.csv` – Median Household Income  
-- `ACSDT5Y2024.B23025-Data.csv` – Employment Status  
-- `ACSDT5Y2024.B25003-Data.csv` – Housing Tenure  
-
-These datasets provide key socioeconomic indicators at the county level across the United States.
+The data consists of county-level socioeconomic indicators collected from the U.S. Census Bureau’s American Community Survey (ACS) 5-Year Estimates.
 
 ---
 
-## 📁 Processed Data
+# Data Sources
 
-- `county_master.csv`  
-  - Combined dataset after merging all ACS tables  
-  - Contains cleaned and structured county-level features  
+The project uses the following ACS datasets:
 
-- `county_risk_app_ready.csv`  
-  - Final dataset used in the Streamlit application  
-  - Includes engineered features and computed economic risk scores  
-
----
-
-## ⚙️ Data Pipeline
-
-The datasets in this folder are processed through the following steps:
-
-1. Data cleaning and preprocessing  
-2. Merging multiple ACS tables  
-3. Feature engineering  
-4. Risk modeling and validation  
-
-These steps are implemented in the notebooks located in the `notebooks/` directory.
+| Dataset | Description |
+|---|---|
+| `ACSDT5Y2024.B01003-Data.csv` | Total population data |
+| `ACSDT5Y2024.B15003-Data.csv` | Educational attainment data |
+| `ACSDT5Y2024.B17001-Data.csv` | Poverty statistics |
+| `ACSDT5Y2024.B19013-Data.csv` | Median household income |
+| `ACSDT5Y2024.B23025-Data.csv` | Employment and unemployment data |
+| `ACSDT5Y2024.B25003-Data.csv` | Housing and homeownership data |
 
 ---
 
-## 🎯 Purpose
+# Processed Datasets
 
-This data is used to:
-
-- Analyze socioeconomic disparities across U.S. counties  
-- Build predictive models for economic risk  
-- Support interactive visualization and exploration in the application  
+| File | Description |
+|---|---|
+| `county_master.csv` | Cleaned and merged county-level dataset |
+| `county_risk_app_ready.csv` | Final processed dataset used in the Streamlit application |
 
 ---
+
+# Dataset Description
+
+Each row in the processed dataset represents a single U.S. county and includes socioeconomic indicators such as:
+
+- Population
+- Median household income
+- Poverty rate
+- Unemployment rate
+- Educational attainment
+- Homeownership rate
+- Economic risk score
+- Risk category
+
+---
+
+# Key Features
+
+The final dataset includes:
+
+| Feature | Description |
+|---|---|
+| `county_fips` | Unique county identifier |
+| `county_name` | County and state name |
+| `total_population` | County population |
+| `median_household_income` | Median household income |
+| `poverty_rate` | Percentage below poverty line |
+| `unemployment_rate` | Percentage unemployed |
+| `bachelors_or_higher_pct` | Percentage with bachelor’s degree or higher |
+| `homeownership_rate` | Percentage of owner-occupied housing |
+| `economic_risk_score` | Composite economic risk metric |
+| `risk_category` | Low / Medium / High risk classification |
+
+---
+
+# Data Processing Overview
+
+The datasets were:
+
+- Downloaded from the U.S. Census Bureau ACS portal
+- Cleaned and standardized
+- Merged using county FIPS codes
+- Transformed into interpretable socioeconomic indicators
+- Used for exploratory analysis, modeling, and dashboard visualization
+
+---
+
+# Data Source
+
+U.S. Census Bureau – American Community Survey (ACS) 5-Year Estimates
+
+🔗 https://data.census.gov/
+
+---
+
+# Folder Structure
+
+```text
+data/
+│
+├── ACSDT5Y2024.B01003-Data.csv
+├── ACSDT5Y2024.B15003-Data.csv
+├── ACSDT5Y2024.B17001-Data.csv
+├── ACSDT5Y2024.B19013-Data.csv
+├── ACSDT5Y2024.B23025-Data.csv
+├── ACSDT5Y2024.B25003-Data.csv
+├── county_master.csv
+├── county_risk_app_ready.csv
+└── README.md
+```
