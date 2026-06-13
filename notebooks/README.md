@@ -28,7 +28,7 @@ notebooks/
 │
 ├── 01_cleaning_preprocessing.ipynb
 ├── 02_eda_economic_risk.ipynb
-├── 03_economic_risk_modeling_and_validation.ipynb
+├── 03_economic_risk_modeling.ipynb
 ├── 04_visualization_streamlit.ipynb
 └── README.md
 ```
@@ -74,7 +74,7 @@ This notebook performs exploratory analysis of socioeconomic indicators across U
 
 ---
 
-## `03_economic_risk_modeling_and_validation.ipynb`
+## `03_economic_risk_modeling.ipynb`
 
 This notebook develops the economic risk framework used in the project.
 
