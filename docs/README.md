@@ -15,8 +15,6 @@ docs/
 │
 ├── Final Presentation.pdf
 ├── project_report.md
-├── resume.md
-├── headshot.jpg
 └── README.md
 ```
 
@@ -28,8 +26,6 @@ docs/
 |---|---|
 | `Final Presentation.pdf` | Final capstone presentation summarizing the project objectives, methodology, analysis, modeling, dashboard, and key findings |
 | `project_report.md` | Full capstone project report including methodology, analysis, modeling, and conclusions |
-| `resume.md` | Professional resume |
-| `headshot.jpg` | Profile image used in resume |
 | `README.md` | Documentation overview for this folder |
 
 ---
@@ -66,27 +62,6 @@ The report documents the complete analytical workflow and summarizes the outcome
 
 ---
 
-# Supporting Materials
-
-## Resume
-
-The resume highlights the author’s:
-- Academic background
-- Technical skills
-- Data science experience
-- Relevant projects and achievements
-
----
-
-## Headshot
-
-The profile image is included for:
-- Academic presentations
-- Portfolio usage
-- Professional project documentation
-
----
-
 # Purpose
 
 This folder serves as a centralized location for all non-code materials supporting the capstone project.
@@ -94,5 +69,3 @@ This folder serves as a centralized location for all non-code materials supporti
 The documentation supports:
 - Academic submission requirements
 - Project explanation and reproducibility
-- Presentation and portfolio preparation
-- Professional showcase and recruiter review
